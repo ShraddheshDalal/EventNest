@@ -1,2 +1,0 @@
-# EventNest
-WebDevwlopment mini project.
