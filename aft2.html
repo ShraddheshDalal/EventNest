@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        background-image: url(musicaft.png);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .confirmation-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #666;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .thank-you-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: #af22d5;
+      }
+      .event-details {
+        margin-top: 30px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+      }
+      .event-image {
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .social-links {
+        margin-top: 30px;
+      }
+      .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #af22d5;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .social-links a:hover {
+        color: #661297;
+      }
+
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+    </style>
+  </head>
+  <body>
+    <div class="confirmation-container">
+      <h2>Thank You for Registering!</h2>
+      <p class="thank-you-message">
+        Your registration has been successfully submitted.
+      </p>
+      <div class="event-details">
+        <h3>Event Details:</h3>
+        <p><strong>Event Name:</strong> Tune Town</p>
+        <p><strong>Date:</strong> May 16, 2024</p>
+        <p>
+          <strong>
+            All extra details will be notified to you on your email.</strong
+          >
+        </p>
+      </div>
+      <div class="button">
+        <a href="index.html">
+<button class="button-57" role="button"><span class="text"  onclick="window.location.href='index.html'">Click Here to return to home page</span><span>See you soon at the event</span> </button></a>
+      <div class="social-links">
+        <p>Stay connected with us:</p>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>

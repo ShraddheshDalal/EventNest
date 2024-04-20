@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        background-image: url(arcaft.png);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .confirmation-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #3a3737;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h2 {
+        color: #ffffff;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .thank-you-message {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4caf50;
+      }
+      .event-details {
+        margin-top: 30px;
+        border-top: 1px solid #ffffff;
+        padding-top: 20px;
+      }
+      .event-image {
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .social-links {
+        margin-top: 30px;
+      }
+      .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #4caf50;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .social-links a:hover {
+        color: #2e8b57;
+      }
+
+      /* CSS */
+      .button-85 {
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-85:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-button-85 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+
+      @keyframes glowing-button-85 {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .button-85:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="confirmation-container">
+      <h2>Thank You for Registering!</h2>
+      <p class="thank-you-message">
+        Your registration has been successfully submitted.
+      </p>
+      <div class="event-details">
+        <h3>Event Details:</h3>
+        <p><strong>Event Name:</strong> Arcade Alley</p>
+        <p><strong>Date:</strong> May 26, 2024</p>
+        <p>
+          <strong>
+            All extra details will be notified to you on your email.</strong
+          >
+        </p>
+      </div>
+      <div class="button">
+        <button
+          class="button-85"
+          role="button"
+          onclick="window.location.href='index.html'"
+        >
+          Click here to return to the home page
+        </button>
+      </div>
+      <div class="social-links">
+        <p>Stay connected with us:</p>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
